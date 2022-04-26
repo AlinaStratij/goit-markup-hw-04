@@ -120,7 +120,6 @@ img {
 }
 
 .header-contact {
-  height: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +157,11 @@ img {
       rgba(47, 48, 58, 0.4)
     ),
     url(../css/images/bg-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
@@ -196,16 +199,17 @@ img {
   background-color: #188ce8;
 }
 /* section "our benefits" */
-.benefits-icon {
+
+.icon-box {
+  display: flex;
   background-color: #f5f4fa;
   border-radius: 4px;
-  display: flex;
-  width: 270px;
+  width: 270;
   height: 120px;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  align-items: center;
+  justify-content: center;
 }
-
 .benefits-title {
   position: absolute;
   white-space: nowrap;
@@ -333,12 +337,13 @@ img {
   margin-top: 16px;
   justify-content: center;
 }
-
 .team-social-title {
-  margin-right: 10;
+  margin-right: 10px;
 }
-
-.team-sotial-link {
+.team-social-title:last-child{
+  margin-right: 0;
+}
+.team-social-link {
   fill: #afb1b8;
   border-radius: 50%;
   width: 44px;
@@ -348,17 +353,17 @@ img {
   align-items: center;
 }
 
-.team-sotial-link:hover,
-.team-sotial-link:focus {
+.team-social-link:hover,
+.team-social-link:focus {
   background-color: var(--hover-color);
   fill: var(--background-color-main);
 }
+/* Klients */
 .klients-title {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: #212121;
 }
 
@@ -370,25 +375,24 @@ img {
 }
 .klients-item {
   margin-right: 30px;
-  fill: #afb1b8;
 }
 .klients-item:last-child {
   margin-right: 0;
 }
-
-.klients-icon {
-  border: 1px solid #afb1b8;
+.klients-link{
+  fill: #AFB1B8;
+  display: flex;
+  border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
   width: 170px;
   height: 92px;
-  background-position: center;
-  background-size: contain;
-  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
 }
 
-.klients-link:hover .klients-icon,
-.klients-link:focus .klients-icon {
+.klients-link:hover,
+.klients-link:focus{
   fill: var(--hover-color);
   border-color: var(--hover-color);
 }
@@ -396,11 +400,10 @@ img {
 /* section "footer" */
 .footer {
   background-color: var(--background-color-hero-footer);
-}
-.adress {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .web-social {
   display: flex;
 }
@@ -453,8 +456,6 @@ img {
 
 .footer-social-link {
   margin-left: 70px;
-  padding-top: 72px;
-  padding-bottom: 100px;
 }
 
 .footer-social-title {
