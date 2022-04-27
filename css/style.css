@@ -5,6 +5,7 @@
   --background-color-hero-footer: #2f303a;
   --background-color-main: #ffffff;
   --bacground-color-image: #f5f4fa;
+  --icon-background:#afb1b8;
 }
 
 body {
@@ -344,7 +345,7 @@ img {
   margin-right: 0;
 }
 .team-social-link {
-  fill: #afb1b8;
+  fill:var(--icon-background);
   border-radius: 50%;
   width: 44px;
   height: 44px;
@@ -380,9 +381,9 @@ img {
   margin-right: 0;
 }
 .klients-link{
-  fill: #AFB1B8;
+  fill: var(--icon-background);
   display: flex;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--icon-background);
   box-sizing: border-box;
   border-radius: 4px;
   width: 170px;
@@ -406,6 +407,7 @@ img {
 
 .web-social {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -493,6 +495,8 @@ img {
 .icon-link:focus {
   background-color: var(--hover-color);
 }
+
+/* Portfolio */
 
 .filter-btn {
   margin-bottom: 50px;
